@@ -182,7 +182,7 @@ body {
 
 /* FIXME: Main adjustments end */
 
-/* TODO: Dashboard options starts */
+/* TODO: Dashboard options section starts */
 
 .options {
     display: flex;
@@ -231,7 +231,7 @@ body {
     color: var(--main-color);
 }
 
-/* FIXME: Dashboard options ends */
+/* FIXME: Dashboard options section ends */
 
 /* TODO: Table data starts */
 
@@ -239,6 +239,7 @@ body {
     margin-top: 5rem;
     background: var(--second-color);
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .table__content__introduction {
@@ -321,6 +322,79 @@ body {
 
 /* FIXME: Table data ends */
 
+/* TODO: New customers section starts */
+
+.new--customers--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new--customers--container {
+    background: var(--second-color);
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    width: 27rem;
+}
+
+.new__customers__introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.customer .customer__image img {
+    height: 4rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer .customer__status {
+    margin-left: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.customer .customer__content h3 {
+    font-size: 1.2rem;
+    color: var(--third-color);
+}
+
+.customer .customer__content span {
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: #333;
+}
+
+.new__customers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.customer__status i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.new__customers__introduction h2 {
+    font-size: 1.7rem;
+    color: var(--third-color);
+}
+
+/* FIXME: New customers section ends */
+
 /* TODO: Media queries start */
 
 @media screen and (min-width:220px) {
@@ -380,6 +454,42 @@ body {
     .table__head {
         font-size: 1.6rem;        
     }
+
+    .table__content__introduction h2 {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: Table adjustments end */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 35rem;
+        padding: 2rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 2rem;
+    }
+
+    .customer .customer__image img {
+        height: 5rem;
+    }
+
+    .customer .customer__content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .customer .customer__content span {
+        font-size: 1.2rem;
+    }
+
+    .new__customers__introduction h2 {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
+    
 }
 
 @media screen and (min-width:400px) {
@@ -409,6 +519,13 @@ body {
 
     /* FIXME: Dashboard options adjustments */
 
+    /* TODO: New customers adjustments */
+
+    .customer .customer__status {
+        margin-left: 4rem;
+    }
+
+    /* FIXME: New customers adjustments end */
     
 }
 
@@ -442,6 +559,22 @@ body {
     }
 
     /* FIXME: Table adjustments end */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 40rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 8rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
     
 }
 
@@ -454,6 +587,22 @@ body {
     }
 
     /* FIXME: Dashboard options adjustments */
+
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 44rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 10rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
     
 }
 
@@ -467,6 +616,22 @@ body {
     }
 
     /* FIXME: Dashboard options adjustments */
+    
+    /* TODO: New customers adjustments */
+
+    .new--customers--container {
+        width: 52rem;
+    }
+
+    .customer .customer__status {
+        margin-left: 19rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: New customers adjustments end */
     
 }
 
@@ -549,6 +714,33 @@ body {
     }
 
     /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table and new customer adjustments */
+
+    .table--and--customers {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table__content {
+        flex: 1 1;
+    }
+
+    .new--customers--container {
+        width: initial;
+    }
+
+    .customer .customer__status {
+        margin-left: 2rem;
+    }
+
+    .customer .customer__status i {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Table and New customers adjustments end */
     
 }
 
@@ -671,3 +863,5 @@ body {
     /* FIXME: Dashboard options adjustments */
     
 }
+
+/* FIXME: Media queries end */
