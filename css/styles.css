@@ -177,6 +177,7 @@ body {
 .main {
     margin-top: var(--header-height);
     padding: 5rem 1.5rem;
+    overflow: hidden;
 }
 
 /* FIXME: Main adjustments end */
@@ -232,6 +233,93 @@ body {
 
 /* FIXME: Dashboard options ends */
 
+/* TODO: Table data starts */
+
+.table__content {
+    margin-top: 5rem;
+    background: var(--second-color);
+    border-radius: 1rem;
+}
+
+.table__content__introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+.table__content__introduction h2 {
+    font-size: 1.6rem;
+}
+
+.button {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+    background: var(--main-color);
+    border-radius: 1.5rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    letter-spacing: 0.1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__row {
+    text-align: left;
+}
+
+.table__head {
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.table__head,
+.table__data__cell {
+    padding: 1rem;
+}
+
+.table__data__cell {
+    font-size: 1rem;
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.table__row span {
+    display: inline-block;
+    aspect-ratio: 1;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+.table__row .review {
+    background: #5c498c;
+}
+
+.table__row .progress {
+    background: var(--main-color);
+}
+
+.table__row .pending {
+    background: #dd5501;
+}
+
+.table__status {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+/* FIXME: Table data ends */
 
 /* TODO: Media queries start */
 
@@ -282,6 +370,16 @@ body {
     }
 
     /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table adjustments */
+
+    .table__data__cell {
+        font-size: 1.3rem;
+    }
+
+    .table__head {
+        font-size: 1.6rem;        
+    }
 }
 
 @media screen and (min-width:400px) {
@@ -331,6 +429,19 @@ body {
     }
 
     /* FIXME: Dashboard options adjustments */
+
+    /* TODO: Table adjustments */
+
+    .table__content__introduction {
+        padding: 2rem;
+    }
+
+    .table__head,
+    .table__data__cell {
+        padding: 2rem;
+    }
+
+    /* FIXME: Table adjustments end */
     
 }
 
