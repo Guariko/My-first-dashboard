@@ -1,0 +1,205 @@
+/* TODO: Setting up the project starts */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: #f75571;
+    --second-color: #fefefe;
+    --third-color: #222;
+    --header-height: 8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+}
+
+/* FIXME: Setting up the project ends */
+
+/* TODO: Header starts */
+
+.header__bars span {
+    display: none;
+}
+
+.search__header {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--second-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 1rem;
+}
+
+.profile__image img {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+}  
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__image {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.profile__content .profile__name {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0.2rem;
+}
+
+.profile__content .profile__status {
+    color: var(--third-color);
+    font-size: 1rem;
+}
+
+.header__bars .fa-bars {
+    font-size: 3.5rem;
+    padding: 1rem 1.4rem;
+    background: var(--main-color);
+    border-radius: 100%;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+/* FIXME: Header ends */
+
+/* TODO: Media queries start */
+
+@media screen and (min-width: 350px) {
+
+    /* TODO: Header adjustments */
+
+    .profile__content .profile__name {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    .profile__content .profile__status {
+        color: var(--third-color);
+        font-size: 1.1rem;
+    }
+
+    /* FIXME: Header adjustments end */
+}
+
+@media screen and (min-width:400px) {
+
+    /* TODO: Header adjustments */
+    
+    .header__bars {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__bars span {
+        display: inline-block;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: var(--third-color);
+    }
+
+    /* FIXME: Header adjustments end */
+    
+}
+
+@media screen and (min-width:450px) {
+
+    /* TODO: Header adjustments */
+    
+    .header__bars {
+        gap: 1.5rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+}
+
+@media screen and (min-width:700px) {
+
+    /* TODO: Header adjustments */
+
+    .search__header {
+        display: block;
+    }
+
+    .header__search__here {
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        padding: 1.4rem;
+    }
+
+    .header__search__here input[type="search"] {
+        font-size: 1.5rem;
+        background: none;
+    }
+
+    .header__search__here input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+
+    .header__search__here input[type="search"]::placeholder {
+        color: var(--third-color);
+        text-transform: capitalize;
+    }
+
+    .search__header .fa-search {
+        font-size: 2.2rem;
+        margin: 0 2rem 0 1rem;
+        cursor: pointer;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+}
+
+@media screen and (min-width:1000px) {
+
+    /* TODO: Header adjustments */
+
+    .header__bars {
+        gap: 0;
+    }
+
+    .header__bars .fa-bars {
+        font-size: 3rem;
+        background: none;
+        border-radius: 0;
+        color: var(--third-color);
+    }
+
+    /* FIXME: Header adjustments end */
+    
+}
